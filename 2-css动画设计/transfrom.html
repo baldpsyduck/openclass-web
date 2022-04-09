@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            transform-style: preserve-3d;
+            width:200px;
+            height:200px;
+            background-color: red;
+        }
+        .innner {
+            width:100px;
+            height:100px;
+            /* height:50%;
+            width:50%; */
+            background-color:black;
+            /* transform: scale(1.0,2.0) skew(30deg,0deg) translate(20px,20px) ; */
+            /* transform: scale(1.0,2.0); */
+            /* transform: translate(50%,50%); */
+            /* transform:rotateY(0.125turn); */
+            /* transform:skew(45deg,0deg) */
+
+            /* transform: rotateY(0.5turn); */
+            /* backface-visibility:hidden; */
+
+            transform:translateZ(20px) perspective(200px) rotateY(20deg);
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="innner"></div>
+    </div>
+</body>
+</html>
